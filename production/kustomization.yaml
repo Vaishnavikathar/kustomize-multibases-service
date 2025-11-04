@@ -1,0 +1,13 @@
+resources:
+- ../base
+namePrefix: prod-
+patches:
+  - target:
+      kind: Service
+      name: mydep1-service
+    patch: |-
+      - op: replace
+        path: /spec/ports/0/nodePort
+        value: 33000
+replicas:
+  count: 1

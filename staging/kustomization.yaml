@@ -1,0 +1,13 @@
+resources:
+- ../base
+namePrefix: staging-
+patches:
+  - target:
+      kind: Service
+      name: mydep1-service
+    patch: |-
+      - op: replace
+        path: /spec/ports/0/nodePort
+        value: 31000
+replicas:
+  count: 3
