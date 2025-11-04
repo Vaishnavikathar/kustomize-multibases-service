@@ -8,7 +8,7 @@ patches:
     patch: |-
       - op: replace
         path: /spec/ports/0/nodePort
-        value: 33000
+        value: 31005
 replicas:
   - name: mydep1
     count: 1
