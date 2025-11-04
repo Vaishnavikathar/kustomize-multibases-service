@@ -10,4 +10,5 @@ patches:
         path: /spec/ports/0/nodePort
         value: 32000
 replicas:
-  count: 2
+  - name: mydep1
+    count: 2
