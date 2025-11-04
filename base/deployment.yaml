@@ -19,3 +19,5 @@ spec:
         name: httpd
         ports:
         - containerPort: 80
+	- containerPort: 443
+	- containerPort: 8080
