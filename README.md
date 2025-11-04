@@ -43,8 +43,8 @@ kubectl apply -k production/
 
 Each overlay customizes:
 - `namePrefix` per environment
-- Replica count (`2`, `3`, `1`)
-- NodePort (`32000`, `31000`, `33000`)
+- Replica count (`2`, `1`, `3`)
+- NodePort (`32000`, `31000`, `31005`)
 
 ---
 
